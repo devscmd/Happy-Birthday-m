@@ -2,112 +2,163 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Happy Birthday Meena❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Meena 💖</title>
+
 <style>
-
 body{
-    margin:0;
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(270deg,#ff9a9e,#fad0c4,#fbc2eb,#a6c1ee);
-    background-size: 800% 800%;
-    animation: gradientMove 10s ease infinite;
-    text-align:center;
-    color:white;
+margin:0;
+font-family:'Comic Sans MS',cursive;
+text-align:center;
+color:white;
+background:linear-gradient(45deg,#ff9a9e,#fad0c4,#ffdde1);
+background-size:400% 400%;
+animation:bg 10s infinite alternate;
 }
 
-@keyframes gradientMove{
-    0%{background-position:0% 50%;}
-    50%{background-position:100% 50%;}
-    100%{background-position:0% 50%;}
-}
-
-.container{
-    padding:40px;
+@keyframes bg{
+0%{background-position:left;}
+100%{background-position:right;}
 }
 
 h1{
-    font-size:50px;
-    animation: glow 2s infinite alternate;
+margin-top:40px;
+font-size:40px;
+animation:glow 2s infinite alternate;
 }
 
 @keyframes glow{
-    from{ text-shadow:0 0 10px white;}
-    to{ text-shadow:0 0 25px pink;}
+from{text-shadow:0 0 10px white;}
+to{text-shadow:0 0 25px pink;}
 }
 
 .message{
-    font-size:22px;
-    max-width:700px;
-    margin:auto;
-    margin-top:20px;
+padding:20px;
+font-size:20px;
 }
 
-.cats{
-    margin-top:40px;
+.cat-container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
 }
 
-.cats img{
-    width:150px;
-    border-radius:20px;
-    margin:10px;
-    transition:0.4s;
+.cat{
+width:180px;
+border-radius:20px;
+margin:10px;
+transition:0.5s;
 }
 
-.cats img:hover{
-    transform:scale(1.2) rotate(5deg);
-}
-
-.footer{
-    margin-top:40px;
-    font-size:18px;
+.cat:hover{
+transform:scale(1.1) rotate(5deg);
 }
 
 .heart{
-    animation: heartbeat 1s infinite;
+font-size:35px;
+animation:float 3s infinite;
 }
 
-@keyframes heartbeat{
-    0%{transform:scale(1);}
-    50%{transform:scale(1.2);}
-    100%{transform:scale(1);}
+@keyframes float{
+0%{transform:translateY(0);}
+50%{transform:translateY(-15px);}
+100%{transform:translateY(0);}
 }
 
+/* popup */
+.popup{
+position:fixed;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+background:white;
+color:#ff4d6d;
+padding:25px;
+border-radius:15px;
+box-shadow:0 0 20px rgba(0,0,0,0.3);
+display:none;
+z-index:10;
+}
+
+.popup button{
+margin-top:10px;
+padding:8px 15px;
+border:none;
+background:#ff4d6d;
+color:white;
+border-radius:10px;
+cursor:pointer;
+}
+
+footer{
+margin:30px;
+}
 </style>
 </head>
 
 <body>
 
-<div class="container">
+<h1>🎉 Happy Birthday MEENA 🎉</h1>
 
-<h1>🎉 Happy Birthday Meena 🎉</h1>
+<div class="heart">💖 🐾 💖</div>
 
-<div class="message">
-<p>
-Dear <b>Meena</b>,  
-On your special day I wish you happiness, love, success, and endless smiles.  
-May your life be filled with beautiful moments and dreams come true.  
-
-You are amazing and deserve all the happiness in the world. ✨
+<p class="message">
+Happy Birthday to the sweetest girl, <b>MEENA</b> 💖<br><br>
+May your life be filled with happiness, love, and lots of cute cats 🐱✨<br>
+You are special and you deserve all the joy in the world 🌸
 </p>
 
-<p class="heart">🤍 Sending you lots of love and blessings 🤍</p>
+<div class="cat-container">
+<img class="cat" src="https://cdn.discordapp.com/attachments/1136284054833086504/1482260428582158376/da77d9abc83c947fbe9b7340864ec0e3.jpg?ex=69b64e19&is=69b4fc99&hm=1bdd5fbe750ef2b56a34b01b5f494a9d185c943456b4787a7ab3a221fed074e4&">
+<img class="cat" src="https://cdn.discordapp.com/attachments/1136284054833086504/1482260435976851516/d7e2c2576131eda7ca73a8599f48d29a.jpg?ex=69b64e1b&is=69b4fc9b&hm=ed3b6fb2896344ffad1a443c989762580f6665fc2415f8afa3a0dc256e4b0189&">
+<img class="cat" src="https://cdn.discordapp.com/attachments/1136284054833086504/1482260451139260496/a7a180e8c8f2979245d3df096a235263.jpg?ex=69b64e1e&is=69b4fc9e&hm=7e0dfbaacaf830f03064cb308297bd3d1863ef053d6b7d62d526ddec95d221da&">
+<img class="cat" src="https://cdn.discordapp.com/attachments/1136284054833086504/1482260444088635422/e65045afce69bb4e072f1b370d1fc4bb.jpg?ex=69b64e1c&is=69b4fc9c&hm=4b65706e4a753b71cb75f7fc80f7dc627cae16464867be5495d30b20916f12d0&">
 </div>
 
-<div class="cats">
-<h2>🐱 Cute Cats for You 🐱</h2>
+<footer>
+Made with ❤️ for Meena
+</footer>
 
-<img src="https://cataas.com/cat">
-<img src="https://cataas.com/cat/sleepy">
-<img src="https://cataas.com/cat/cute">
-<img src="https://cataas.com/cat/playful">
-
+<!-- popup -->
+<div class="popup" id="lovePopup">
+<h2>💌 A Message for Meena</h2>
+<p>
+Meena, you make life brighter and happier.  
+I wish you endless smiles and beautiful moments.  
+Happy Birthday 💖
+</p>
+<button onclick="closePopup()">Thank You ❤️</button>
 </div>
 
-<div class="footer">
-<p>Made with love by someone who cares about you 💖</p>
-</div>
+<!-- music -->
+<audio autoplay loop>
+<source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_5f33c5f4b3.mp3?filename=happy-birthday-royalty-free-music-112194.mp3" type="audio/mpeg">
+</audio>
 
-</div>
+<!-- confetti -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+<script>
+window.onload = function() {
+
+document.getElementById("lovePopup").style.display="block";
+
+setInterval(()=>{
+
+confetti({
+particleCount:150,
+spread:90,
+origin:{y:0.6}
+});
+
+},3000);
+
+}
+
+function closePopup(){
+document.getElementById("lovePopup").style.display="none";
+}
+</script>
 
 </body>
 </html>
